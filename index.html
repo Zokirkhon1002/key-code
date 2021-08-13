@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>event-keyCodes</title>
+  </head>
+  <body onkeypress="WhichButton(event)">
+    <div class="container">
+        <h3 class="style">Press any key to get the keyCode</h3>
+      <div class="box">
+        <small id="small">event.key</small>
+        <div class="style" id="key">Enter</div>
+      </div>
+      <div class="box">
+        <small id="small1">event.keyCode</small>
+        <div class="style" id="keyCode">13</div>
+      </div>
+      <div class="box">
+        <small id="small2">event.code</small>
+        <div class="style" id="code">Digit</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
