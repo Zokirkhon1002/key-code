@@ -9,12 +9,14 @@ body {
     overflow: hidden;
 }
 .container {
-    background-color: #eeeeee;
+    background-color: #e1e1e1;
+    font-family: 'Muli', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100vh;
+    overflow: hidden;
 }
 .style {
     border: 1px solid #888;
@@ -23,28 +25,16 @@ body {
     display: inline-flex;
     align-items: center;
     font-size: 30px;
-    padding: 30px 60px;
+    padding: 30px;
+    flex-direction: column;
     margin: 10px;
-    text-align: center;
-    flex-direction: column;
     min-width: 150px;
-}
-.box {
     position: relative;
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
 }
-.box small {
+.style small {
     position: absolute;
     top: -30px;
     text-align: center;
     color: #333;
     font-size: 24px;
-    display: none;
-}
-h3 {
-    position: absolute;
-    z-index: 2;
 }

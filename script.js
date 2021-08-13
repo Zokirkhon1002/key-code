@@ -1,9 +1,21 @@
-function WhichButton(event){
-    document.querySelector("h3").style.display = "none";
-    document.getElementById("small").style.display = "block";
-    document.getElementById("small1").style.display = "block";
-    document.getElementById("small2").style.display = "block";
-    document.getElementById("key").innerHTML = event.key;
-    document.getElementById("keyCode").innerHTML = event.keyCode;
-    document.getElementById("code").innerHTML = event.code;
-}
+let container = document.querySelector(".container");
+
+window.addEventListener('keypress',(event)=>{
+    container.innerHTML = `
+
+    <div class="style">
+    ${event.key === ' '? 'Space' : event.key}
+    <small>event.key</small>
+    </div>
+
+    <div class="style">
+    ${event.keyCode}
+    <small>event.keyCode</small>
+    </div>
+
+    <div class="style">
+    ${event.code}
+    <small>event.code</small>
+    </div>
+    `
+});
